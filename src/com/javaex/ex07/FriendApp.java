@@ -15,20 +15,25 @@ public class FriendApp {
         for(int i = 0; i<friendArray.length; i++) {
         	// 친구정보(이름) 입력받기
         	System.out.print("이름: ");
-        	String name = sc.toString();
+        	String name = sc.nextLine();
+        	
         	// 친구정보(핸드폰) 입력받기
         	System.out.print("헨드폰: ");
-        	String hp = sc.toString();
+        	String hp = sc.nextLine();
+        	
         	// 친구정보(학교) 입력받기
         	System.out.print("힉교: ");
-        	String school = sc.toString();
+        	String school = sc.nextLine();
         	System.out.println("============================");
+        	
         	// Friend 인스턴스 생성하여 데이터 넣기
-        	friendArray[i] = new Friend(name, hp, school); 
+        	Friend friend = new Friend(name, hp, school);
+        	friend.setName(name);
+        	friend.setHp(hp);
+        	friend.setSchool(school);
         	// 인스턴스 주소를 배열에 대입
+        	friendArray[i] = friend;
         }
-
-            
 
             
 
