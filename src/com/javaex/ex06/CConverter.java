@@ -3,10 +3,7 @@ package com.javaex.ex06;
 public class CConverter {
     
     public static double rate;
-    
-    private double dollar;
-    private double won;
-    
+
     
     public static void setRate(double rate){
         CConverter.rate = rate;
